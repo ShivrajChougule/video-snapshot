@@ -5,7 +5,7 @@ Use the video-snapshot to take the snapshots of video and download it.
 Also you can paste the video URL and download snapshots of that video. 
 
 <p align="center">
-  <img width="500" height="300" src="https://raw.githubusercontent.com/ShivrajChougule/image-color-picker/master/image-color-picker/img/output2.png">
+  <img width="500" height="300" src="https://raw.githubusercontent.com/ShivrajChougule/video-snapshot/master/images/preview.JPG">
 </p>
 
 ## To preview demo of image-color-picker project, [Click here](https://stackblitz.com/edit/video-snapshot?embed=1&file=src/app/app.component.ts&hideExplorer=1&hideNavigation=1&view=preview)
