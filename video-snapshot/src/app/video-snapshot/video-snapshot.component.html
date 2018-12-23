@@ -1,0 +1,19 @@
+<div class="container-fluid">
+	<div class="row m-3 col-sm-4">
+		<input type='file' class="form-control" style="height:32px;" accept="video/*" #fileElement (change)="readUrl($event, linkUrl)">
+  </div>
+  <div class="row m-3 col-sm-4">
+    <span class="col-sm-12 text-center">or</span>
+  </div>
+<div class="m-3 col-sm-4 d-flex">
+  <input type="text" class="form-control" style="height:42px;" #linkUrl placeholder=" Paste URL here"/>
+  <button class="btn btn-info ml-1 pl-3 pr-3" style="height:42px;" (click)="getLink(linkUrl, fileElement)">GO</button>
+</div>
+<div class="row m-3 col-sm-4">
+  <img src="https://cdn.dribbble.com/users/121337/screenshots/1024835/loading2.gif" class="col-sm-12" height="500" *ngIf="loadingState">
+  <video #videoElement height="500" class="video col-sm-12" autoplay controls crossorigin="anonymous" *ngIf="videoLoaded">
+    <source [src]="videoUrl" autoplay type="video/mp4">
+  </video>
+</div>
+<div class="row m-3 col-sm-2"><button class="btn btn-info downloadBtn" (click)="takeSnapshot()" *ngIf="videoLoaded">Download Snapshot</button></div>
+</div>
