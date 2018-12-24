@@ -28,7 +28,7 @@ To achieve responsiveness install bootstrap.
 ### STEPS:
 
 #### 1. Select a video
-Select the video by clicking 'Choose File' or paste the video URL in textbox and then click on GO.
+Select the video by clicking 'Choose File' or paste the video URL in textbox and then click on <b>GO</b>
 
 #### 2. Take a snapshot
 Click on the 'Download Snapshot' button and snapshot of video will download
