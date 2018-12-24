@@ -2,7 +2,7 @@
 
 video-snapshot is a simple component for taking snapshots from the video and download those snapshots.
 Use the video-snapshot to take the snapshots of video and download it. 
-Also you can paste the external video URL, play video and take snapshots of from external video. 
+Also you can paste the external video URL, play video and take snapshots from external video. 
 
 <p align="center">
   <img width="400" height="400" src="https://raw.githubusercontent.com/ShivrajChougule/video-snapshot/master/images/preview.JPG">
