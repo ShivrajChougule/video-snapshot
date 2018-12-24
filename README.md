@@ -41,7 +41,7 @@ User can able to see the downloaded snapshot at the default download path of the
 ```html
 <app-video-snapshot [snapshotName] = "snapshot"></app-video-snapshot>
 ```
-#### snapshotName is a Input decorator which will pass the image name to a video-snapshot component
+#### snapshotName is a Input decorator which will pass the download image name to a video-snapshot component
 
 ### Example of Image Name
 
