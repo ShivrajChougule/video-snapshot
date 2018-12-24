@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef} from '@angular/core';
+import { Component, ViewChild, ElementRef, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-video-snapshot',
@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class VideoSnapshotComponent {
   @ViewChild('videoElement') public videoElement: ElementRef;
+  @Input('snapshotName') public snapshotName: string;
   public videoUrl: any;
   public videoLoaded = false;
   public loadingState = false;
@@ -26,7 +27,6 @@ export class VideoSnapshotComponent {
   public getLink(linkUrl, fileElement) {
     fileElement.value = '';
     if (linkUrl.value.trim() !== '') {
-    let sampleLink = 'https://www.radiantmediaplayer.com/media/bbb-360p.mp4';
     this.loadingState = true;
     this.videoLoaded = false;
     this.http.get(linkUrl.value.trim(), { responseType: 'blob' }).subscribe((res) => {
@@ -58,7 +58,7 @@ export class VideoSnapshotComponent {
     context.fillRect(0, 0, w, h);
     context.drawImage(video, 0, 0, w, h);
     const link = document.createElement('a');
-    link.setAttribute('download', 'sampleimage.png');
+    link.setAttribute('download', this.snapshotName + '.png');
     const dataURL = canvasElement.toDataURL();
     link.href = dataURL;
     document.body.appendChild(link);
