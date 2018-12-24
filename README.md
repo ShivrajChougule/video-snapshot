@@ -43,7 +43,7 @@ User can able to see the downloaded snapshot at the default download path of the
 ```
 #### snapshotName is a Input decorator which will pass the download image name to a video-snapshot component
 
-### Example of Image Name
+### Example of Download Image Name
 
 ```typescript
 public snapshot = 'sample_snapshot';
