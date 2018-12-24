@@ -1,11 +1,11 @@
 # Video Snapshot Using Angular
 
-video-snapshot is a simple component for taking snapshots from video and download.
+video-snapshot is a simple component for taking snapshots from the video and download the same.
 Use the video-snapshot to take the snapshots of video and download it. 
 Also you can paste the video URL and download snapshots of that video. 
 
 <p align="center">
-  <img width="500" height="300" src="https://raw.githubusercontent.com/ShivrajChougule/video-snapshot/master/images/preview.JPG">
+  <img width="400" height="400" src="https://raw.githubusercontent.com/ShivrajChougule/video-snapshot/master/images/preview.JPG">
 </p>
 
 ## To preview demo of image-color-picker project, [Click here](https://stackblitz.com/edit/video-snapshot?embed=1&file=src/app/app.component.ts&hideExplorer=1&hideNavigation=1&view=preview)
@@ -27,35 +27,26 @@ Download the video-snapshot folder and install the required packages and run the
 
 ## STEPS:
 
-### 1] Select an Image
-Select the image by clicking 'Choose File'
+### 1] Select a video
+Select the video by clicking 'Choose File' or paste the video URL in textbox
 
-### 2] Pick a Color
-Click anywhere on the image and you will get that pixel color
+### 2] Take a snapshot
+Click on the 'Download Snapshot' button and snapshot of video will download
 
-### 3] Preview
-By clicking on image you can see the current pixel color in the preview box
+### 3] View the snapshot
+User can able to see the downloaded snapshot at the defualt download path of the browser
 
-### 4] Copy Color Code
-By clicking on image you will get RGBA and HEX values in textboxes, you can copy any color code and use it in your application
-
-
-## @Output Decorator
-@Output has been used to provide user with required output. For this i have used EventEmitter, whenever some event will be called user will get result.
-
-### Below method will give HEX and RGBA values.
-
-```typescript
-getcolval(event)
-{
-console.log(event);
-}
-```
-
-### outputColor is the output event name I have used.
+### Pass the data to video-smapshot component as mentioned below
 
 ```html
-<app-imgcol (outputColor)="getcolval($event)"></app-imgcol>
+<app-video-snapshot [snapshotName] = "snapshot"></app-video-snapshot>
+```
+#### snaphotName is a Input decorator which will pass the image name to a video-snapshot component
+
+### Example of image Name
+
+```typescript
+public snapshot = 'sample_snapshot';
 ```
 
 
