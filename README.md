@@ -31,10 +31,10 @@ To achieve responsiveness install bootstrap.
 Select the video by clicking 'Choose File' or paste the video URL in textbox and then click on <b>GO</b>
 
 #### 2. Take a snapshot
-Click on the 'Download Snapshot' button and snapshot of video will download
+Click on the 'Download Snapshot' button and snapshot of the video will download
 
 #### 3. View the snapshot
-User can able to see the downloaded snapshot at the default download path of the browser
+User can able to see the downloaded snapshot on the default download path of the browser
 
 ### Pass the data to video-snapshot component as mentioned below
 
