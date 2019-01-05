@@ -11,7 +11,6 @@ Also you can browse the video or paste the external video URL, play video and ta
 
 ## Using the complete angular project
 Download the video-snapshot folder and install the required packages and run the application.
-To achieve responsiveness install bootstrap.
 
 ### Installing
 
@@ -24,6 +23,7 @@ To achieve responsiveness install bootstrap.
 ```
  > ng serve
 ```
+#### For better appearance install bootstrap4.
 
 ### STEPS:
 
