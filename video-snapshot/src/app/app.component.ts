@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public snapshot = 'sample_snapshot';
+  public snapshotImageName: string = "sample_snapshot";
+  public snapshotImageType: string = "JPG";
 }
