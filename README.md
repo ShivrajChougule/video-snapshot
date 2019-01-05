@@ -25,7 +25,7 @@ Download the video-snapshot folder and install the required packages and run the
 ```
 #### For better appearance install bootstrap4.
 
-### STEPS:
+### HOW TO USE ?
 
 #### 1. Select a video
 Select the video by clicking 'Choose File' or paste the full path video URL in textbox and then click on <b>GO</b>
