@@ -1,6 +1,6 @@
 # Video Snapshot Using Angular
 
-video-snapshot is a component for taking snapshots from the video and download those snapshots.
+The video-snapshot is a component for taking snapshots from the video and download those snapshots.
 Also you can browse the video or paste the external video URL, play video and take snapshots. 
 
 <p align="center">
