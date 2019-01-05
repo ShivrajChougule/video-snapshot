@@ -1,15 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  .video {
-    object-fit: fill;
-  }
-  .downloadBtn {
-    width: 100%;
-    height: 66px;
-    font-size: 22px;
-    font-weight: 500;
-    white-space:normal !important;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+.video {
+  object-fit: fill;
+}
+.downloadBtn {
+  width: 100%;
+  height: 66px;
+  font-size: 22px;
+  font-weight: 500;
+  white-space:normal !important;
+}
