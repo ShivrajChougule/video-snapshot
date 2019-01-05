@@ -48,8 +48,7 @@ User can able to see the downloaded snapshot on the default download path of the
 
 ##### 2. snapshotImageType is an input decorator which will pass the download image type to a video-snapshot component and it supports            22 image types.
 
-### Example of Download Image Name
-
+#### Example of Input Decorators
 ```typescript
 public snapshotImageName: string = 'sample_snapshot';
 public snapshotImageType: string = 'JPG';
