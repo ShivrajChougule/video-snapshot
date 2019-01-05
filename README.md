@@ -28,7 +28,8 @@ To achieve responsiveness install bootstrap.
 ### STEPS:
 
 #### 1. Select a video
-Select the video by clicking 'Choose File' or paste the video URL in textbox and then click on <b>GO</b>
+Select the video by clicking 'Choose File' or paste the full path video URL in textbox and then click on <b>GO</b>
+##### example of sample video url :- https://www.radiantmediaplayer.com/media/bbb-360p.mp4
 
 #### 2. Take a snapshot
 Click on the 'Download Snapshot' button and snapshot of the video will download
@@ -39,14 +40,19 @@ User can able to see the downloaded snapshot on the default download path of the
 ### Pass the data to video-snapshot component as mentioned below
 
 ```html
-<app-video-snapshot [snapshotName] = "snapshot"></app-video-snapshot>
+<app-video-snapshot [snapshotName] = "snapshot" [downloadImageType]= "imageType"></app-video-snapshot>
 ```
-#### snapshotName is a Input decorator which will pass the download image name to a video-snapshot component
+### Input Decorator Description
+
+#### 1. snapshotName is a Input decorator which will pass the download image name to a video-snapshot component.
+
+#### 2. imageType is a Input decorator which will pass the download image type to a video-snapshot component and it supports 22 image types.
 
 ### Example of Download Image Name
 
 ```typescript
 public snapshot = 'sample_snapshot';
+public imageType: string = 'JPG';
 ```
 
 
