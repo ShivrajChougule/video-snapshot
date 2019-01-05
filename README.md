@@ -7,7 +7,7 @@ Also you can browse the video or paste the external video URL, play video and ta
   <img width="400" height="400" src="https://raw.githubusercontent.com/ShivrajChougule/video-snapshot/master/images/preview.JPG">
 </p>
 
-### To preview demo of video-snapshot project, [Click here](https://video-snapshot-component.stackblitz.io)
+### To preview demo of video-snapshot project, [Click here](https://angular-video-snapshot.stackblitz.io)
 
 ## Using the complete angular project
 Download the video-snapshot folder and install the required packages and run the application.
