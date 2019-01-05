@@ -40,19 +40,19 @@ User can able to see the downloaded snapshot on the default download path of the
 ### Pass the data to video-snapshot component as mentioned below
 
 ```html
-<app-video-snapshot [snapshotName] = "snapshot" [downloadImageType]= "imageType"></app-video-snapshot>
+<app-video-snapshot [snapshotName] = "snapshotImageName" [downloadImageType]= "snapshotImageType"></app-video-snapshot>
 ```
-### Input Decorator Description
+#### Input Decorator Description
 
-#### 1. snapshotName is a Input decorator which will pass the download image name to a video-snapshot component.
+##### 1. snapshotImageName is an input decorator which will pass the download image name to a video-snapshot component.
 
-#### 2. imageType is a Input decorator which will pass the download image type to a video-snapshot component and it supports 22 image types.
+##### 2. snapshotImageType is an input decorator which will pass the download image type to a video-snapshot component and it supports 22 image types.
 
 ### Example of Download Image Name
 
 ```typescript
-public snapshot = 'sample_snapshot';
-public imageType: string = 'JPG';
+public snapshotImageName: string = 'sample_snapshot';
+public snapshotImageType: string = 'JPG';
 ```
 
 
