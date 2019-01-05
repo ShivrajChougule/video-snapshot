@@ -8,9 +8,11 @@ import { HttpClient } from '@angular/common/http';
 export class VideoSnapshotComponent {
   @ViewChild('videoElement') public videoElement: ElementRef;
   @Input('snapshotName') public snapshotName: string;
+  @Input('downloadImageType') public userImageType: string;
   public videoUrl: any;
   public videoLoaded = false;
   public loadingState = false;
+  public imageTypes = ['JPG', 'PNG', 'BMP', 'TIFF', 'GIF', 'PPM', 'PGM', 'PBM', 'PNM', 'WebP', 'HEIF', 'BPG', 'ECW', 'FITS', 'FLIP', 'PAM', 'CD5', 'CPT', 'PSD', 'PSP', 'XCF', 'PDN'];
   constructor(private http: HttpClient) {}
   public readUrl(event, linkUrl) {
     linkUrl.value = '';
@@ -58,7 +60,9 @@ export class VideoSnapshotComponent {
     context.fillRect(0, 0, w, h);
     context.drawImage(video, 0, 0, w, h);
     const link = document.createElement('a');
-    link.setAttribute('download', this.snapshotName + '.png');
+    this.snapshotName = this.snapshotName !== '' ?  this.snapshotName : 'snapshot';
+    this.userImageType = this.imageTypes.indexOf(this.userImageType.toUpperCase()) >= 0 ? this.userImageType.toUpperCase() : 'PNG';
+    link.setAttribute('download', this.snapshotName + '.' + this.userImageType);
     const dataURL = canvasElement.toDataURL();
     link.href = dataURL;
     document.body.appendChild(link);
