@@ -46,7 +46,7 @@ User can able to see the downloaded snapshot on the default download path of the
 
 ##### 1. snapshotImageName is an input decorator which will pass the download image name to a video-snapshot component.
 
-##### 2. snapshotImageType is an input decorator which will pass the download image type to a video-snapshot component and it supports 22 image types.
+##### 2. snapshotImageType is an input decorator which will pass the download image type to a video-snapshot component and it supports            22 image types.
 
 ### Example of Download Image Name
 
